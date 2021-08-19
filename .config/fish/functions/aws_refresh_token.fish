@@ -8,7 +8,7 @@ function refresh_session -a token
 	awk '{ if (NF>0) print; else exit }' $cred_path > {$cred_path}_copy
 	cat {$cred_path}_copy > $cred_path
 
-	set aws_resp (aws sts get-session-token --serial-number $AWS_MFA_ARN --token-code $token | jq)
+	set aws_resp (aws sts get-session-token --serial-number $AWS_MFA_ARN --token-code $token --profile default | jq)
  
  	set aws_access_key_id (echo $aws_resp | jq -r .Credentials.AccessKeyId)
  	set aws_secret_access_key (echo $aws_resp | jq -r .Credentials.SecretAccessKey)

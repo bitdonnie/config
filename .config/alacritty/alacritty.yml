@@ -124,6 +124,8 @@ colors:
     - { index: 20, color: '#bdae93' }
     - { index: 21, color: '#ebdbb2' }
 
+font:
+  size: 8.5
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
@@ -169,7 +171,7 @@ colors:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+background_opacity: 0.865
 
 shell:
   program: /usr/bin/fish

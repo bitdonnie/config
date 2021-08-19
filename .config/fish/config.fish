@@ -12,14 +12,45 @@ abbr -a gp git push
 abbr -a ct cargo test
 abbr -a cb cargo build
 abbr -a ci cargo init
+abbr -a cc cargo check
+abbr -a cr cargo run
 
 # Terraform
+abbr -a tf terraform
 abbr -a tfi terraform init
 abbr -a tff terraform fmt
 abbr -a tfv terraform validate
 abbr -a tfa terraform apply
 abbr -a tfd terraform destroy
+abbr -a tfp terraform plan
+
+# Docker
+abbr -a d docker
+abbr -a dim docker image ls
+abbr -a dco docker container ls
+abbr -a db docker build
+
+# Docker Compose
+abbr -a dc docker-compose
+abbr -a dcu docker-compose up
+abbr -a dcb docker-compose build
+
+# Kubernetes - minikube
+abbr -a mk minikube
+abbr -a mkd minikube dashboard
+
+# Kubernetes - ctl
+abbr -a kc kubectl
+abbr -a kccd kubectl create deployment
+abbr -a kced kubectl expose deployment
+abbr -a kcgs kubectl get services
+
+# Lualatex compiler
+abbr -a lc lualatex
+
+# PDF opener
+abbr -a pdf zathura
 
 set PATH $HOME/.cargo/bin $PATH
-
+set PATH /usr/local/texlive/2021/bin/x86_64-linux $PATH
 

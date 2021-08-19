@@ -11,8 +11,25 @@ call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'chriskempson/base16-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"  - Statusline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+
 " Language support
+
+" -- Fish shell
+Plug 'dag/vim-fish'
+
+" -- Rust
 Plug 'rust-lang/rust.vim'
+
+" -- LaTeX
+Plug 'lervag/vimtex'
+
+" -- justfile's
+Plug 'NoahTheDuke/vim-just'
 
 call plug#end()
 
@@ -20,7 +37,8 @@ call plug#end()
 " # END Plugins
 " ====================================
 
-" Plugin Settings
+" Use the filtype plugin to specify file type specific configurations
+filetype plugin indent on
 
 " Color schemes
 set termguicolors
@@ -82,12 +100,6 @@ endfunction
 " # START Keyboard shortcuts
 " ====================================
 
-" Rust settings
-let g:rustfmt_autosave = 1
-let g:rustfmt_emit_files = 1
-let g:rustfmt_fail_silently = 0
-let g:rust_clip_command = 'xclip -selection clipboard'
-
 " ; as :
 nnoremap ; :
 
@@ -131,4 +143,24 @@ set mouse=a " Enable mouse usage (all modes) in terminals
 " # END GUI Settings
 " ====================================
 
+" ====================================
+" # START PLUGIN Settings
+" ====================================
 
+" Rust settings
+let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
+" let g:rust_clip_command = 'xclip -selection clipboard'
+
+" vimtex
+let g:tex_flavor  = 'latex'
+let g:tex_conceal = ''
+let g:vimtex_fold_manual = 1
+let g:vimtex_compiler_engine = 'lualatex'
+" use SumatraPDF if you are on Windows
+let g:vimtex_view_method = 'zathura'
+
+if empty(v:servername) && exists('*remote_startserver')
+  call remote_startserver('VIM')
+endif

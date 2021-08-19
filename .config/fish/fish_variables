@@ -1,19 +1,47 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR 1:\x1d
+SETUVAR DOCKER_BUILDKIT:1
+SETUVAR --export DOCKER_HOST:unix\x3a///run/user/1000/docker\x2esock
+SETUVAR --export ECR_URI:837634349677\x2edkr\x2eecr\x2eeu\x2dcentral\x2d1\x2eamazonaws\x2ecom
+SETUVAR --export KUBECOFNIG:\x1d
+SETUVAR --export KUBECONFIG:/home/don/\x2ekube/config
+SETUVAR --export --path KUBE_CONFIG_PATH:/home/don/ops/d2x/jeddah/kube_config
+SETUVAR --export SINGLESTORE_LICENSE_KEY:BDlkY2E2YmMzNWY3MDQ4NDE5OWI1NTAxNTU3ZWMyODVjAAAAAAAAAAAEAAAAAAAAAAwwNQIZAKi6iT66R\x2brZWNgXs91pmbBDP4R4jsk/YwIYMiFbkiu4QC68/aqMAH3fg0oL9vJlahkLAA\x3d\x3d
+SETUVAR --export SSH_SECRETS:/home/don/\x2essh/certs
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cb:cargo\x20build
+SETUVAR _fish_abbr_cc:cargo\x20check
 SETUVAR _fish_abbr_ci:cargo\x20init
+SETUVAR _fish_abbr_cr:cargo\x20run
 SETUVAR _fish_abbr_ct:cargo\x20test
+SETUVAR _fish_abbr_d:docker
+SETUVAR _fish_abbr_db:docker\x20build
+SETUVAR _fish_abbr_dc:docker\x2dcompose
+SETUVAR _fish_abbr_dcb:docker\x2dcompose\x20build
+SETUVAR _fish_abbr_dco:docker\x20container\x20ls
+SETUVAR _fish_abbr_dcu:docker\x2dcompose\x20up
+SETUVAR _fish_abbr_dim:docker\x20image\x20ls
 SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gc:git\x20clone
 SETUVAR _fish_abbr_gcom:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_gp:git\x20push
+SETUVAR _fish_abbr_kc:kubectl
+SETUVAR _fish_abbr_kccd:kubectl\x20create\x20deployment
+SETUVAR _fish_abbr_kced:kubectl\x20expose\x20deployment
+SETUVAR _fish_abbr_kcgs:kubectl\x20get\x20services
+SETUVAR _fish_abbr_lc:lualatex
 SETUVAR _fish_abbr_ls:exa
+SETUVAR _fish_abbr_mk:minikube
+SETUVAR _fish_abbr_mkd:minikube\x20dashboard
+SETUVAR _fish_abbr_pdf:zathura
+SETUVAR _fish_abbr_tf:terraform
 SETUVAR _fish_abbr_tfa:terraform\x20apply
 SETUVAR _fish_abbr_tfd:terraform\x20destroy
 SETUVAR _fish_abbr_tff:terraform\x20fmt
 SETUVAR _fish_abbr_tfi:terraform\x20init
+SETUVAR _fish_abbr_tfp:terraform\x20plan
 SETUVAR _fish_abbr_tfv:terraform\x20validate
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
 SETUVAR fish_color_cancel:\x2dr
