@@ -1,0 +1,5 @@
+#!/bin/sh
+
+" Install textlive package that include most of the tex dependencies
+" NOTE: size is quite large (approx. 2100MB)
+sudo pacman -S texlive-most
