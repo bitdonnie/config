@@ -54,3 +54,5 @@ abbr -a pdf zathura
 set PATH $HOME/.cargo/bin $PATH
 set PATH /usr/local/texlive/2021/bin/x86_64-linux $PATH
 
+starship init fish | source
+
