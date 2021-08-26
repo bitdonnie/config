@@ -2,12 +2,11 @@
 # VERSION: 3.0
 SETUVAR 1:\x1d
 SETUVAR DOCKER_BUILDKIT:1
-SETUVAR --export DOCKER_HOST:unix\x3a///run/user/1000/docker\x2esock
+SETUVAR --export DOCKER_HOST:unix\x3a///run/docker\x2esock
 SETUVAR --export ECR_URI:837634349677\x2edkr\x2eecr\x2eeu\x2dcentral\x2d1\x2eamazonaws\x2ecom
 SETUVAR --export KUBECOFNIG:\x1d
 SETUVAR --export KUBECONFIG:/home/don/\x2ekube/config
-SETUVAR --export --path KUBE_CONFIG_PATH:/home/don/ops/d2x/jeddah/kube_config
-SETUVAR --export SINGLESTORE_LICENSE_KEY:BDlkY2E2YmMzNWY3MDQ4NDE5OWI1NTAxNTU3ZWMyODVjAAAAAAAAAAAEAAAAAAAAAAwwNQIZAKi6iT66R\x2brZWNgXs91pmbBDP4R4jsk/YwIYMiFbkiu4QC68/aqMAH3fg0oL9vJlahkLAA\x3d\x3d
+SETUVAR --export --path KUBE_CONFIG_PATH:tmp_config
 SETUVAR --export SSH_SECRETS:/home/don/\x2essh/certs
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cb:cargo\x20build
