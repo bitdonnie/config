@@ -41,9 +41,16 @@ abbr -a mkd minikube dashboard
 
 # Kubernetes - ctl
 abbr -a kc kubectl
+abbr -a kcg kubectl get all
+abbr -a kcd kubectl describe
+abbr -a kcl kubectl logs
+abbr -a kcp kubectl port-forward
 abbr -a kccd kubectl create deployment
 abbr -a kced kubectl expose deployment
 abbr -a kcgs kubectl get services
+
+# Pulumi
+abbr -a pl pulumi
 
 # Lualatex compiler
 abbr -a lc lualatex
