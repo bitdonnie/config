@@ -63,3 +63,6 @@ set PATH /usr/local/texlive/2021/bin/x86_64-linux $PATH
 
 starship init fish | source
 
+# Start ssh-agent
+fs_ssh_agent
+
