@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "[Bootstrap] Downloading packages.."
-sudo pacman -Syy neovim tmux alacritty fish starship exa bat
+sudo pacman -Syy neovim tmux alacritty fish starship exa bat gnupg
 
 echo "[Bootstrap] Install nvim dep."
 sudo pacman -Syy nodejs

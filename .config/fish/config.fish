@@ -61,4 +61,8 @@ abbr -a pdf zathura
 set PATH $HOME/.cargo/bin $PATH
 set PATH /usr/local/texlive/2021/bin/x86_64-linux $PATH
 
+# Set GPG TTY path
+set GPG_TTY (tty)
+
 starship init fish | source
+
