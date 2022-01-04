@@ -3,7 +3,7 @@
 echo "[Bootstrap] Downloading packages.."
 sudo pacman -Syy neovim tmux alacritty fish starship exa bat gnupg
 
-echo "[Bootstrap] Install nvim dep."
+echo "[Bootstrap] Install nvim dependencies"
 sudo pacman -Syy nodejs
 
 # Make Fish the default shell
