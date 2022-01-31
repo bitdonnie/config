@@ -64,5 +64,8 @@ set PATH /usr/local/texlive/2021/bin/x86_64-linux $PATH
 # Set GPG TTY path
 set GPG_TTY (tty)
 
+# Evironment variable for ssh-agent socket
+set SSH_AUTH_SOCKET $XDG_RUNTIME_DIR/ssh-agent.socket
+
 starship init fish | source
 

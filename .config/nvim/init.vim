@@ -25,12 +25,8 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 
 " Language support
-
 " -- Fish shell
 Plug 'dag/vim-fish'
-
-" -- Rust
-Plug 'rust-lang/rust.vim'
 
 " -- LaTeX
 Plug 'lervag/vimtex'
@@ -157,12 +153,6 @@ set mouse=a " Enable mouse usage (all modes) in terminals
 " ====================================
 " # START PLUGIN Settings
 " ====================================
-
-" Rust settings
-let g:rustfmt_autosave = 1
-let g:rustfmt_emit_files = 1
-let g:rustfmt_fail_silently = 0
-" let g:rust_clip_command = 'xclip -selection clipboard'
 
 " vimtex
 let g:tex_flavor  = 'latex'

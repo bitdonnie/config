@@ -9,13 +9,13 @@ if test -f /etc/arch-release; then
 	sudo pacman -Syu
 
 	echo "[Bootstrap] Downloading packages.."
-	sudo pacman -Syy neovim tmux alacritty fish starship exa bat gnupg
+	sudo pacman -Syy neovim tmux alacritty fish starship exa bat gnupg wireshark-qt
 	
 	# Install nodejs and xclip that are required to:
 	# nodejs: use coc (vs-code like autocompletions)
 	# xclip: copy + paste functionalities in nvim
 	echo "[Bootstrap] Install nvim dependencies"
-	sudo pacman -Syy nodejs xclip
+	sudo pacman -Syy nodejs npm xclip
 
 	# Make Fish the default shell
 	echo "[Boostrap] Configuring Fish as deault shell"
@@ -32,4 +32,14 @@ if test -f /etc/arch-release; then
 
 	echo "[Boostrap - Rustup Installation] Installing rust toolchain components"
 	rustup component add rls rust-analysis rust-src
+	
+	# nvim +'CocInstall coc-rust-analyzer
+
+	# Install and configure Docker
+	echo "[Boostrap] Installing Docker"
+	sudo pacman -Syy docker
+	sudo groupadd docker && sudo usermod -aG docker $USER
+	printf '{"features": { "buildkit": true } }' | sudo tee -a /etc/docker/daemon.json
+
+
 fi

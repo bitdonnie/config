@@ -1,5 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export GPG_TTY:not\x20a\x20tty
+SETUVAR --export ME_LIB:/home/donvdkrogt/d2x/lib/ME/matching/src/
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cb:cargo\x20build
 SETUVAR _fish_abbr_cc:cargo\x20check
