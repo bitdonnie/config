@@ -7,6 +7,7 @@ abbr -a g git
 abbr -a gc git clone
 abbr -a gcom git commit -m 
 abbr -a gp git push
+abbr -a glg git log --graph --decorate --oneline
 
 # Cargo
 abbr -a ct cargo test

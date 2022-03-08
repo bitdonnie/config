@@ -1,7 +1,5 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
-SETUVAR --export GPG_TTY:not\x20a\x20tty
-SETUVAR --export ME_LIB:/home/donvdkrogt/d2x/lib/ME/matching/src/
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cb:cargo\x20build
 SETUVAR _fish_abbr_cc:cargo\x20check
@@ -19,6 +17,7 @@ SETUVAR _fish_abbr_e:nvim
 SETUVAR _fish_abbr_g:git
 SETUVAR _fish_abbr_gc:git\x20clone
 SETUVAR _fish_abbr_gcom:git\x20commit\x20\x2dm
+SETUVAR _fish_abbr_glg:git\x20log\x20\x2d\x2dgraph\x20\x2d\x2ddecorate\x20\x2d\x2doneline
 SETUVAR _fish_abbr_gp:git\x20push
 SETUVAR _fish_abbr_kc:kubectl
 SETUVAR _fish_abbr_kccd:kubectl\x20create\x20deployment
